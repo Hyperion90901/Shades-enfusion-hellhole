@@ -1,0 +1,214 @@
+Turret : "{086A10C13C8A2350}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/JLTV_RS6_Javelin.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{691E2B69FAE34A40}" {
+     SourceMaterial "M230_LF"
+     AssignedMaterial "{40B7EA05569B9FDC}Assets/Vehicles/Generic/Turrets/data/M230_LF_Black.emat"
+    }
+   }
+  }
+  RHS_CounterTurretComponent "{691E2A49E2E41F31}" {
+  }
+  SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   DoorInfoList {
+    CompartmentDoorReference "{620CD9EE5080AD3D}" {
+     AnimDoorIndex 5
+    }
+    CompartmentDoorReference "{64502E275B77B4E1}" {
+     AnimDoorIndex 5
+    }
+    CompartmentDoorReference "{64502E27448BE195}" {
+     AnimDoorIndex 5
+    }
+    CompartmentDoorReference "{64502E2747A04C60}" {
+     AnimDoorIndex 5
+    }
+   }
+   CompartmentSlots {
+    TurretCompartmentSlot TurretCompartment {
+     CompartmentUniqueName "commander"
+     CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
+      ParentContextList {
+       "CommanderHatch"
+      }
+      "Sort Priority" 2
+     }
+     GetOutAction SCR_GetOutAction "{509D56664FF79DDB}" {
+      ParentContextList {
+       "CommanderHatch"
+      }
+      UIInfo SCR_ActionUIInfo "{509D566643F0DEA8}" {
+      }
+     }
+     JumpOutAction SCR_JumpOutAction "{5D0B1D47DC1C5730}" {
+      ParentContextList {
+       "CommanderHatch"
+      }
+      UIInfo SCR_ActionUIInfo "{5D0B1D47D8169C4A}" {
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D566648F37562}" {
+      ParentContextList {
+       "Commander"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D56867A46DBE769}" {
+       ParentContextList {
+        "Commander"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D59F48D7BD2}" {
+       ParentContextList {
+        "CommanderHatch"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
+      Offset -0.1725 0.091 -0.3225
+     }
+     SeatType 5
+     DoorInfoList {
+      0
+     }
+     UIInfo SCR_ActionUIInfo "{50870A10DCCDED83}" {
+      Name "#AR-VehiclePosition_Commander"
+     }
+     CanTurnOut 1
+     TurnOutDoorIdx 0
+     m_DefaultOccupantData SCR_DefaultOccupantData "{620D095D5963F0C2}" {
+      m_sDefaultOccupantPrefab "{F35F145D4A3F75EF}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_CC.et"
+     }
+     m_fFreelookCameraNeckFollowTraverse 1
+    }
+   }
+  }
+  TurretComponent "{5C7A7A05B2216696}" {
+   components {
+    SCR_2DSightsComponent "{5C7A7A05B2216693}" {
+     Enabled 0
+     SightsPosition PointInfo "{5C7A7A05B221DCA0}" {
+     }
+     SightsPointFront PointInfo "{5C7A7A05B221DCAC}" {
+      PivotID "v_gun_01"
+     }
+     SightsPointRear PointInfo "{5C7A7A05B22196B4}" {
+      PivotID "v_gun_01"
+     }
+     SightsPriority 1
+    }
+   }
+  }
+  WCS_Armament_LoadoutComponent "{633A37525CB3871C}" {
+   m_ArmamentGroups {
+    WCS_ArmamentWeaponGroup "{633A37524771E2DE}" {
+     prefab "{615CFD8A229E7E72}Prefabs/Weapons/AircraftWeapons/MissilePods/Pod_Javelin_CROWS_Abrams.et"
+     weaponsInfo {
+      WCS_ArmamentWeaponInfo "{633A37527F74B565}" {
+       Position PointInfo "{633A375272CD018D}" {
+        Offset 0.6027 0.6345 -0.1304
+        Angles -20.1473 0 0
+       }
+      }
+     }
+    }
+   }
+   m_sPilotCompartmentUniqueName "commander"
+  }
+  WeaponSlotComponent "{644D39AC6E1ED7B6}" {
+   WeaponTemplate "{4DD8C4F0F6EAA050}Prefabs/Weapons/MachineGuns/M240/MG_M240_CROWS2.et"
+  }
+  ActionsManagerComponent "{51ACD09C7181BA0B}" {
+   ActionContexts {
+    UserActionContext "{51ACFBB064390C6E}" {
+     ContextName "default"
+     Position PointInfo "{51ACFBB061993925}" {
+      PivotID "v_gun_01"
+      Offset -0.7227 -0.0974 0.0161
+     }
+     Radius 0.1
+    }
+    UserActionContext "{691E2A49E2E5E0F4}" {
+     ContextName "Commander"
+     Position PointInfo "{691E2A49E2E5E0F7}" {
+      PivotID "gunner_idle"
+      Offset -0.1753 0.2735 -0.6226
+     }
+     Radius 0.4
+    }
+   }
+   additionalActions {
+    SPC_RearmFromVehicleInventoryAction "{691E2A49E2E5E0F9}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{691E2A49E2E5E0F8}" {
+     }
+     m_sCompatibleProjectiles "{9B8CDC3CD2E535D2}Prefabs/Weapons/Magazines/Box_30x113_M230LF_250rnd_HEDP.et"
+    }
+    SPC_RearmFromVehicleInventoryAction "{691E2A49E2E5E0FB}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{691E2A49E2E5E0FA}" {
+     }
+     "Sort Priority" 1
+     m_sCompatibleProjectiles "{994590B89BC7600C}Prefabs/Weapons/Magazines/Magazine_M240_Coax/Box_762x51_M240_CROWS2_500rnd_4AP_1Tracer.et"
+    }
+    SCR_ResupplyTurretBeltSupportStationAction "{691E2A49E2E5E0FC}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{691E2A49E2E5E0FF}" {
+      Name "#AR-SupportStation_Resupply_Vehicle_Weapon_ActionName"
+      m_sIconName "rearm"
+     }
+     ActionTitle "Rearm: 30MM"
+     m_ResupplyData SCR_ResupplyItemSupportStationData "{691E2A49E2E5E0C0}" {
+      m_sItemPrefab "{3B55FC2350E560FC}Prefabs/Weapons/Ammo/Ammo_30x113/Ammo_30x113_HEDP_M230.et"
+     }
+     m_iAddBulletsAmount 30
+    }
+    SCR_ResupplyTurretBeltSupportStationAction "{691E2A49E2E5E0C3}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{691E2A49E2E5E0C9}" {
+      Name "#AR-SupportStation_Resupply_Vehicle_Weapon_ActionName"
+      m_sIconName "rearm"
+     }
+     ActionTitle "Rearm: 7.62"
+     "Sort Priority" 1
+     m_ResupplyData SCR_ResupplyItemSupportStationData "{691E2A49E2E5E0C8}" {
+      m_sItemPrefab "{9F39DD07E2860466}Prefabs/Weapons/Ammo/Ammo_762x51_AP_M61.et"
+     }
+     m_iWeaponSlotID 1
+     m_iAddBulletsAmount 50
+    }
+   }
+  }
+  VehicleAnimationComponent "{5C7A7A05B2227F84}" {
+   AnimGraph "{7209B480AE95B73B}Assets/Vehicles/Tracked/M1A1/workspaces/M1A1.agr"
+   AnimInstance "{AC6294F122B2FCE0}Assets/Vehicles/Tracked/M1A1/workspaces/M1A1_vehicle.asi"
+   StartNode "VehicleMasterControl"
+   AnimVariables {
+    AnimationVariable "{691E2A49E2E5E0CC}" {
+     VariableName "Yaw_Commander"
+     SignalName "AimTurnCommanderTurret"
+    }
+    AnimationVariable "{691E2A49E2E5E0CF}" {
+     VariableName "Pitch_Commander"
+     SignalName "AimElevationCommanderTurret"
+    }
+   }
+   AnimInjection AnimationAttachmentInfo "{5C7A7A05B2227F85}" {
+    AnimGraph "{7209B480AE95B73B}Assets/Vehicles/Tracked/M1A1/workspaces/M1A1.agr"
+    AnimInstance "{C58B5F68205B857D}Assets/Vehicles/Tracked/M1A1/workspaces/M1A1_player.asi"
+   }
+   DeactivationDelay 2
+  }
+ }
+ coords -0.722 0.489 -1.941
+}

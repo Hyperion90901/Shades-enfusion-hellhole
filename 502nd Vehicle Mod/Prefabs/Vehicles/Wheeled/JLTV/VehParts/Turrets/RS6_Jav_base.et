@@ -1,0 +1,130 @@
+Turret : "{086A10C13C8A234F}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/RS6_Jav_base.et" {
+ ID "51ACD0965653D003"
+ components {
+  SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   DoorInfoList {
+    CompartmentDoorReference "{620CD9EE5080AD3D}" {
+     AnimDoorIndex 5
+    }
+   }
+   CompartmentSlots {
+    TurretCompartmentSlot TurretCompartment {
+     CompartmentUniqueName "commander"
+     CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
+      ParentContextList {
+       "CommanderHatch"
+      }
+      "Sort Priority" 2
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D566648F37562}" {
+      ParentContextList {
+       "Commander_idle"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D56867A46DBE769}" {
+       ParentContextList {
+        "Commander_idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D59F48D7BD2}" {
+       ParentContextList {
+        "CommanderHatch"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
+      PivotID "gunner_idle"
+      Offset -0.1725 0.1954 -0.3743
+      Angles -1.0763 0 0
+     }
+     SeatType 5
+     DoorInfoList {
+      0
+     }
+     UIInfo SCR_ActionUIInfo "{50870A10DCCDED83}" {
+      Name "#AR-VehiclePosition_Commander"
+     }
+     CanTurnOut 1
+     TurnOutDoorIdx 0
+     m_DefaultOccupantData SCR_DefaultOccupantData "{620D095D5963F0C2}" {
+      m_sDefaultOccupantPrefab "{F35F145D4A3F75EF}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_CC.et"
+     }
+     m_fFreelookCameraNeckFollowTraverse 1
+     m_fRandomEjectionChance 0
+    }
+   }
+  }
+  TurretComponent "{5C7A7A05B2216696}" {
+   components {
+    SCR_2DSightsComponent "{5C7A7A05B2216693}" {
+     m_sReticleTexture "{1043E8B9D9D51466}UI/Textures/Sights/AbramsGAS/BIOC-white_UI.edds"
+     m_sReticleGlowTexture "{1043E8B9D9D51466}UI/Textures/Sights/AbramsGAS/BIOC-white_UI.edds"
+    }
+   }
+  }
+  WCS_Armament_LoadoutComponent "{633A37525CB3871C}" {
+   m_sPilotCompartmentUniqueName "commander"
+  }
+  WCS_Armament_VehicleWeaponStationComponent "{644D39AC1DF95A3B}" {
+   components {
+    WCS_Armament_InfraredMissileWeaponStationModuleComponent "{6872B9458DE29EF9}" {
+     m_sCompartmentUniqueName "commander"
+    }
+   }
+  }
+  ActionsManagerComponent "{51ACD09C7181BA0B}" {
+   ActionContexts {
+    UserActionContext "{692B24935E7C7AF1}" {
+     ContextName "Rearm30"
+     Position PointInfo "{68AB2C4EC41D4B01}" {
+      PivotID "v_turret_01"
+      Offset -0.4798 0.5528 -0.0602
+     }
+    }
+   }
+   additionalActions {
+    SCR_ResupplyTurretBeltSupportStationAction "{692B24937CE404B4}" {
+     ParentContextList {
+      "Rearm30"
+     }
+     UIInfo SCR_ActionUIInfo "{64D71DA34B97700C}" {
+      Name "#AR-SupportStation_Resupply_Vehicle_Weapon_ActionName"
+      m_sIconName "rearm"
+     }
+     ActionTitle "Resupply 30mm"
+     Duration -0.5
+     CanAggregate 1
+     PerformPerFrame 1
+     "Sort Priority" 1
+     m_sSoundProject "{310B4870AE881477}Sounds/Weapons/HeavyWeapons/M242/Weapons_HeavyWeapons_M242_Handling.acp"
+     m_ResupplyData SCR_ResupplyItemSupportStationData "{68AB3A1C800F456A}" {
+      m_sItemPrefab "{9B8CDC3CD2E535D2}Prefabs/Weapons/Magazines/Box_30x113_M230LF_250rnd_HEDP.et"
+     }
+     m_iAddBulletsAmount 35
+    }
+   }
+  }
+  VehicleAnimationComponent "{5C7A7A05B2227F84}" {
+   AnimGraph "{7209B480AE95B73B}Assets/Vehicles/Tracked/M1A1/workspaces/M1A1.agr"
+   AnimInstance "{AC6294F122B2FCE0}Assets/Vehicles/Tracked/M1A1/workspaces/M1A1_vehicle.asi"
+   StartNode "VehicleMasterControl"
+   AnimVariables {
+    AnimationVariableInt "{692B2490B7D8AA9C}" {
+     VariableName "Yaw_Commander"
+     SignalName "AimTurnCommanderTurret"
+    }
+    AnimationVariableInt "{692B2490BC1E4B60}" {
+     VariableName "Pitch_Commander"
+     SignalName "AimElevationCommanderTurret"
+    }
+   }
+   AnimInjection AnimationAttachmentInfo "{5C7A7A05B2227F85}" {
+    AnimGraph "{7209B480AE95B73B}Assets/Vehicles/Tracked/M1A1/workspaces/M1A1.agr"
+    AnimInstance "{C58B5F68205B857D}Assets/Vehicles/Tracked/M1A1/workspaces/M1A1_player.asi"
+   }
+   DeactivationDelay 2
+  }
+ }
+ coords -1.193 0.441 -1.026
+}

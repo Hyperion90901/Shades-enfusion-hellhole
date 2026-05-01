@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2F49199418E868B0}Assets/Vehicles/Tracked/M1A1/data/Abrams_T6_decals.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

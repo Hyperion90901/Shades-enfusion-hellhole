@@ -1,0 +1,25 @@
+GenericEntity : "{BE242D04EE46189D}Prefabs/Weapons/Cannons/Cannon_M256/Cannon_M256_M1A2_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{69267E43C826F8E1}" {
+     SourceMaterial "m1a1_abrams"
+     AssignedMaterial "{B6C3C5299A34D683}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_Tan.emat"
+    }
+    MaterialAssignClass "{69267E43C826F8EE}" {
+     SourceMaterial "m1a1_abrams_decals"
+     AssignedMaterial "{9B5303870667B648}Assets/Vehicles/Tracked/M1A1/data/Abrams_T1_decals.emat"
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    SightsComponent "{BB23A637957CFFF8}" {
+     SightsPosition PointInfo "{BB23A63796688E69}" {
+     }
+    }
+   }
+  }
+ }
+}

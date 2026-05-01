@@ -1,0 +1,8 @@
+MatPBRDecal : "{C8309C19AF8E9580}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_decals.emat" {
+ Emissive 1 1 1 0
+ EmissiveLV -7
+ EmissiveAbsoluteLV 0
+ EmissiveMap "{AE16BF667D0E7C37}Textures/T6C.edds"
+ BCRMap "{AE16BF667D0E7C37}Textures/T6C.edds"
+ OpacityMap "{04F6D1BDCF5E9A4C}Textures/T6A.edds"
+}

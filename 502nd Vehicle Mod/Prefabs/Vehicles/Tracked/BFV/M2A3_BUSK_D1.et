@@ -1,0 +1,95 @@
+Tank : "{D37EE00F2A5B9AB5}Prefabs/Vehicles/Tracked/BFV/M2A3_BUSK_BASE.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_VehicleSoundComponent "{55C2E66AD4EF2CA6}" {
+   components {
+    RadioBroadcastSoundComponent "{692748D9277F3D5C}" {
+     Filenames {
+      "{0373401D5C6607B1}Sounds/RadioBroadcast/RadioBroadcast_Everon.acp"
+     }
+     ScriptCallbacks 1
+     DistanceManagement 0
+     IncludeInactive 1
+     SoundPoints {
+      SoundPointInfo Car_radio {
+       Offset 0 1.6381 -0.9369
+      }
+     }
+    }
+   }
+  }
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{692748DA7C2275FD}" {
+     SourceMaterial "BODY"
+     AssignedMaterial "{7D93E51B472FCF5B}Assets/Vehicles/Tracked/BFV/data/Desert/BODY_Desert.emat"
+    }
+    MaterialAssignClass "{692748DA7C2275D3}" {
+     SourceMaterial "m2_bradley_chassis"
+     AssignedMaterial "{A759DDC07FAC6858}Assets/Vehicles/Tracked/BFV/data/Desert/m2_bradley_chassis_Desert.emat"
+    }
+   }
+  }
+  RadioBroadcastComponent "{692748D96CD0A4A0}" {
+   TurnOnAction SCR_TurnOnAction "{692748D976F12420}" {
+    ParentContextList {
+     "RADIO"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "M2A3 BUSK D1"
+    Description "M2A3 BUSK D1"
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{631061774EE1DF77}" {
+      m_BudgetType RANK_PRIVATE
+      m_Value 1
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo CustomRadio {
+     Offset -0.2205 1.8253 2.0643
+     Angles 0 -90.0129 0
+     Enabled 1
+    }
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{C97FBB0A1A8B809D}Prefabs/Vehicles/Tracked/BFV/VehParts/Turret/M2A3_Turret_BUSK_B1.et"
+    }
+    EntitySlotInfo LightMount {
+     Prefab "{3355D30149822E46}Prefabs/Vehicles/Tracked/BFV/VehParts/BFV_FrontLightMount_Tan.et"
+    }
+    RegisteringComponentSlotInfo BUSK {
+     Prefab "{C5A61A30183D8231}Prefabs/Vehicles/Tracked/BFV/VehParts/ERA/BUSK_Block_Desert.et"
+    }
+    RegisteringComponentSlotInfo M2A3_Upgrades {
+     Prefab "{5FAA95545BDF7799}Prefabs/Vehicles/Tracked/BFV/VehParts/M2A3_Upgrades_D1.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{66BCF75D7D031D9D}" {
+     Position PointInfo "{64997DE9E76B1E79}" {
+      Offset -0.262 1.8157 2.0678
+     }
+     Omnidirectional 1
+    }
+    UserActionContext "{692748DEC3C60A66}" {
+     UIInfo SCR_ActionContextUIInfo "{691213ECA84CA312}" {
+     }
+     ContextName "RADIO"
+     Position PointInfo "{691213ECA84CA313}" {
+      PivotID "v_light_switch"
+      Offset -0.262 1.8157 2.0678
+     }
+     Radius 1
+    }
+   }
+  }
+ }
+ coords 7.617 0.85 1.908
+}

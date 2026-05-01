@@ -1,0 +1,163 @@
+Tank : "{A78011B8CFEAC001}Prefabs/Vehicles/Tracked/M1A2/SEPV2/M1A2_SEPV2_TUSK.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_VehicleSoundComponent "{55C2E66AD4EF2CA6}" {
+   components {
+    RadioBroadcastSoundComponent "{691213ECA84CA37A}" {
+     Filenames {
+      "{0373401D5C6607B1}Sounds/RadioBroadcast/RadioBroadcast_Everon.acp"
+     }
+     ScriptCallbacks 1
+     DistanceManagement 0
+     IncludeInactive 1
+     SoundPoints {
+      SoundPointInfo Car_Radio {
+       Offset 0 1.6381 0
+      }
+     }
+    }
+   }
+   Filenames + {
+    "{0373401D5C6607B1}Sounds/RadioBroadcast/RadioBroadcast_Everon.acp"
+   }
+  }
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{69267E4350F30408}" {
+     SourceMaterial "m1a1_abrams"
+     AssignedMaterial "{B6C3C5299A34D683}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_Tan.emat"
+    }
+    MaterialAssignClass "{69267E4350F3041D}" {
+     SourceMaterial "m1a1_abrams_decals"
+     AssignedMaterial "{9B5303870667B648}Assets/Vehicles/Tracked/M1A1/data/Abrams_T1_decals.emat"
+    }
+   }
+  }
+  RadioBroadcastComponent "{691213ECA84CA36B}" {
+   TurnOnAction SCR_TurnOnAction "{691213ECA84CA368}" {
+    ParentContextList {
+     "RADIO"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "M1A2 D1"
+    Description "M1A2 D1"
+    m_Image "{366D3C2A62C9C301}UI/Textures/EditorPreviews/Vehicles/Tracked/M1A1/SEPV2/M1A2SEPV2TUSKMERDC.edds"
+    m_aAuthoredLabels + {
+     VEHICLE_APC
+    }
+    m_aAutoLabels {
+     FACTION_US SIZE_M
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{60F4A0A5492B7F0A}" {
+      m_BudgetType RANK_PRIVATE
+      m_Value 1
+     }
+    }
+   }
+  }
+  SCR_SourceBaseAudioComponent "{691213ECA84CA367}" {
+  }
+  SCR_UniversalInventoryStorageComponent "{5E38B84FCEFF0E6D}" {
+   MultiSlots {
+    MultiSlotConfiguration "{6548D63261C1014A}" {
+     SlotTemplate InventoryStorageSlot "{620B03355E01C6DE}" {
+      Prefab "{9B8CDC3CD2E535D2}Prefabs/Weapons/Magazines/Box_30x113_M230LF_250rnd_HEDP.et"
+     }
+     NumSlots 4
+    }
+    MultiSlotConfiguration "{691213ECA84CA362}" {
+     SlotTemplate InventoryStorageSlot "{620B03355E01C6DE}" {
+      Enabled 1
+      Prefab "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et"
+     }
+     NumSlots 5
+    }
+    MultiSlotConfiguration "{691213ECA84CA360}" {
+     SlotTemplate InventoryStorageSlot "{620B03355E01C6DE}" {
+      Enabled 0
+      Prefab "{994590B89BC7600C}Prefabs/Weapons/Magazines/Magazine_M240_Coax/Box_762x51_M240_CROWS2_500rnd_4AP_1Tracer.et"
+     }
+     NumSlots 4
+    }
+   }
+   m_fMaxWeight 2000
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo CustomRadio {
+     Offset 0.5694 1.3293 2.2056
+     Angles 0 -90 0
+     Enabled 1
+    }
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{C91B55A559B11336}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/SEPV2/Turret_B1.et"
+    }
+    EntitySlotInfo DUKE {
+     Enabled 0
+     Prefab "{8930E09904C46A5B}Prefabs/Vehicles/Generic/VehParts/DUKE_Antenna/Duke_Jammer_Antenna_Tan.et"
+    }
+    RegisteringComponentSlotInfo TuskSupports {
+     Prefab "{C366EF1984AD7924}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_TuskIISupports_Tan.et"
+    }
+    RegisteringComponentSlotInfo EngineCover {
+     Prefab "{91E9461D9FD11F35}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_Engine_Grill_Tan.et"
+    }
+    EntitySlotInfo Radio {
+     PivotID "v_body"
+     Offset 0.5692 0.1485 1.2467
+     Angles 0 -90 0
+     Enabled 0
+     Prefab "{36A9D53ACA3A3D48}Prefabs/Props/Civilian/CAR_RADIO.et"
+     DisablePhysicsInteraction 1
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{66BCF75D7D031D9D}" {
+     Position PointInfo "{64997DE9E76B1E79}" {
+      Offset 0.5419 1.3229 2.2032
+     }
+    }
+    UserActionContext "{5E38B84FCEFC1914}" {
+     Position PointInfo "{5E38B84FCEFC1916}" {
+      Offset 0.5568 1.274 2.2796
+     }
+    }
+    UserActionContext "{5E38B84FCEFC1911}" {
+     Position PointInfo "{5E38B84FCEFC92AE}" {
+      Offset 0.5616 1.2822 2.1284
+     }
+    }
+    UserActionContext "{691213ECA84CA315}" {
+     UIInfo SCR_ActionContextUIInfo "{691213ECA84CA312}" {
+     }
+     ContextName "RADIO"
+     Position PointInfo "{691213ECA84CA313}" {
+      PivotID "v_light_switch"
+      Offset 0.5419 1.3229 1.9663
+     }
+     Radius 1
+     Omnidirectional 0
+    }
+    UserActionContext "{691213ECA84CA311}" {
+     UIInfo SCR_ActionContextUIInfo "{691213ECA84CA308}" {
+     }
+     ContextName "RADIO"
+     Position PointInfo "{691213ECA84CA309}" {
+      PivotID "v_light_switch"
+      Offset 0.5419 1.3229 2.1857
+      Angles 0 180 0
+     }
+     Radius 0.3
+     Omnidirectional 0
+     VisibilityAngle 180
+    }
+   }
+  }
+ }
+}

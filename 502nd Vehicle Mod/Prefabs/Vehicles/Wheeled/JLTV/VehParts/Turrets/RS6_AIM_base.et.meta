@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{3B34815B656AA35C}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/RS6_AIM_base.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

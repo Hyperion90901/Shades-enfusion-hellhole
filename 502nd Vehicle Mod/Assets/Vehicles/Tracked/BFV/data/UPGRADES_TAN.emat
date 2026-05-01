@@ -1,0 +1,12 @@
+MatPBRMulti : "{69503AE5B9B6B850}Assets/Vehicles/Tracked/BFV/data/UPGRADES_TAN.emat" {
+ MaskMap "{D92FC5874B0F0694}Textures/B1A.edds"
+ Enabled_4 1
+ BCR_4 "{73CFAB5CF95FE0EF}Textures/B1C.edds"
+ NMO_4 "{D92FC5874B0F0694}Textures/B1A.edds"
+ Enabled_3 1
+ BCR_3 "{73CFAB5CF95FE0EF}Textures/B1C.edds"
+ NMO_3 "{D92FC5874B0F0694}Textures/B1A.edds"
+ Enabled_2 1
+ BCR_2 "{73CFAB5CF95FE0EF}Textures/B1C.edds"
+ NMO_2 "{D92FC5874B0F0694}Textures/B1A.edds"
+}

@@ -1,0 +1,57 @@
+Turret : "{CA7389D701F8248D}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/SEPV2/M1A2_Turret_SEPV2_TUSK2.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{69267E42408E96A0}" {
+     SourceMaterial "m1a1_abrams"
+     AssignedMaterial "{B6C3C5299A34D683}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_Tan.emat"
+    }
+    MaterialAssignClass "{69267E42408E96B6}" {
+     SourceMaterial "m1a1_abrams_decals"
+     AssignedMaterial "{2F49199418E868B0}Assets/Vehicles/Tracked/M1A1/data/Abrams_T6_decals.emat"
+    }
+   }
+  }
+  SlotManagerComponent "{5E182107FF135160}" {
+   Slots {
+    RegisteringComponentSlotInfo Commander {
+     Offset 0.7322 -1.3167 0.2075
+     Prefab "{3B34815B656AA35C}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/RS6_AIM_base.et"
+    }
+    RegisteringComponentSlotInfo LoaderTurret {
+    }
+    RegisteringComponentSlotInfo Commander_sight {
+     Prefab "{157A91388639BDD3}Prefabs/Vehicles/Tracked/M1A2/VehParts/CommanderSight/M1A2_CommanderSight_Tan.et"
+    }
+    RegisteringComponentSlotInfo BasketExtention {
+     Prefab "{840EC6D3791EF277}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_BasketExtention_Tan.et"
+    }
+    RegisteringComponentSlotInfo Warlock {
+     Prefab "{F36CF1EAFE8DEFEF}Prefabs/Vehicles/Tracked/M1A2/VehParts/A2Additions/M1A2_Warlock_Jammer_Tan.et"
+    }
+    RegisteringComponentSlotInfo LoaderArmor {
+     Enabled 0
+    }
+    RegisteringComponentSlotInfo CROWS_Mount {
+     Prefab "{13EC792E5187FCCE}Prefabs/Vehicles/Tracked/M1A2/VehParts/A2Additions/M1A2_SEPV2_CROWS_Mount_Tan.et"
+    }
+    RegisteringComponentSlotInfo GunSupports {
+     Prefab "{E718E2708A8DD12F}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_Turret_M2Supports_Black.et"
+    }
+    RegisteringComponentSlotInfo ARAT {
+     Prefab "{B54F3CF1337D9B85}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_Turret_TuskSupports_Tan.et"
+    }
+    RegisteringComponentSlotInfo Loader_GunShield {
+     Enabled 0
+    }
+    RegisteringComponentSlotInfo SEP_CommandersCupula {
+     Prefab "{6B9AD45B3949B359}Prefabs/Vehicles/Tracked/M1A2/VehParts/A2Additions/M1A2_CommandersCupula_Tan.et"
+    }
+   }
+  }
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   WeaponTemplate "{0F1108554CF943B2}Prefabs/Weapons/Cannons/Cannon_M256/M1A2_B6.et"
+  }
+ }
+}
