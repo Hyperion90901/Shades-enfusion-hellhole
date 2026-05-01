@@ -1,0 +1,60 @@
+Vehicle : "{45DDFA40E1CB6B82}Prefabs/Vehicles/Wheeled/Stryker/M1296/Stryker_Dragoon.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68CCB389C4435D91}" {
+     SourceMaterial "STYKER_base_exterior_Decal"
+     AssignedMaterial "{3D1CF26E73FAA2C7}Assets/Vehicles/Wheeled/SPC_Stryker/data/STYKER_base_exterior_Decal.emat"
+    }
+    MaterialAssignClass "{68CCB389C4435D6A}" {
+     SourceMaterial "Stryker_Logo"
+     AssignedMaterial "{10A263266E9EFB8E}Assets/Vehicles/Wheeled/SPC_Stryker/data/Stryker_Logo.emat"
+    }
+    MaterialAssignClass "{68CCB389C4435D70}" {
+     SourceMaterial "Stryker_Nameplate"
+     AssignedMaterial "{C58E09F4D1435160}Assets/Vehicles/Wheeled/SPC_Stryker/data/Stryker_Nameplate.emat"
+    }
+    MaterialAssignClass "{68CCB389C4435D77}" {
+     SourceMaterial "TTRYKER_Exterior_Tan"
+     AssignedMaterial "{212C497F57348456}Assets/Vehicles/Wheeled/SPC_Stryker/data/TTRYKER_Exterior_Tan.emat"
+    }
+   }
+  }
+  RigidBody "{51DAA09FECF52BBF}" {
+   Mass 22200
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_Image "{FB0085CF2C1E2153}UI/Textures/EditorPreviews/Vehicles/Wheeled/Stryker/Stryker_Dragoon_Cage.edds"
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 3450
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Cage {
+     Prefab "{4388B6130BADE574}Prefabs/Vehicles/Wheeled/Stryker/VehParts/CageFull.et"
+     DisablePhysicsInteraction 1
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo Cage_Back_01 {
+     PivotID "v_backRamp"
+     Prefab "{78AC7C2B48EE9137}Prefabs/Vehicles/Wheeled/Stryker/VehParts/CageBackDoor.et"
+     DisablePhysicsInteraction 1
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo Cage_Back_02 {
+     PivotID "v_backRamp"
+     Prefab "{CADD6A45715E7BCA}Prefabs/Vehicles/Wheeled/Stryker/VehParts/CageBackDoor_02.et"
+     DisablePhysicsInteraction 1
+     RegisterDamage 1
+    }
+   }
+  }
+ }
+ coords -2.625 -3.532 -15.816
+}

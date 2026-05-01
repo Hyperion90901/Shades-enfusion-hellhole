@@ -1,0 +1,15 @@
+GenericEntity : "{027880C0195BC91A}Prefabs/Weapons/Magazines/Magazine_M2_CROWS/Box_127x99_M2_CROWS_200rnd_Base.et" {
+ ID "672C058620DFF077"
+ components {
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    Name "#SPC-Weapon_M2HB_Magazine_200rnd_Name"
+    Description "#SPC-Weapon_M2HB_Magazine_200rnd_Desc"
+    m_eAmmoTypeFlags 134
+   }
+   AmmoMapping {
+    2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3
+   }
+  }
+ }
+}

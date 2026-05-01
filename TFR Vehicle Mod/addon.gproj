@@ -1,0 +1,22 @@
+GameProject {
+ ID "TFR Vehicle mod"
+ GUID "68B3761488CC4718"
+ TITLE "TFR Vehicle mod"
+ Dependencies {
+  "58D0FB3206B6F859" "5E389BB9F58B79A6" "5D1880C4AD410C14" "63120AE07E6C0966" "5C721177A220B42F" "5B02128D896F7DE8" "621D3771875C1D3D" "62E354B50264C08F"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

@@ -1,0 +1,13 @@
+MatPBRDecal {
+ Color 0.262 0.262 0.262 1
+ Emissive 1 1 1 0
+ EmissiveLV -7
+ BlendMode AlphaBlend
+ BCRMap "{AD463875C83102A6}Textures/TP.edds"
+ OpacityMap "{AD463875C83102A6}Textures/TP.edds"
+ GBufferNormal 1
+ NormalCombinePower 1
+ GBufferRoughness 1
+ GBufferMetalness 1
+ GBufferAO 1
+}

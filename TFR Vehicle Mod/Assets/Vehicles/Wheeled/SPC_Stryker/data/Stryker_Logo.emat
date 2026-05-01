@@ -1,0 +1,10 @@
+MatPBRDecal {
+ Color 0.262 0.262 0.262 1
+ Emissive 1 1 1 0
+ EmissiveLV -7
+ AlphaTest 0.971
+ EmissiveMap "{389C68BDE2528859}Textures/SALA.edds"
+ BCRMap "{927C066650026E22}Textures/SALC.edds"
+ OpacityMap "{389C68BDE2528859}Textures/SALA.edds"
+ NormalCombinePower 1
+}

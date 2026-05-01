@@ -1,0 +1,195 @@
+Turret : "{1D23A07249D7EB18}Prefabs/Vehicles/Wheeled/JLTV/VehParts/Turrets/RS6_Base.et" {
+ ID "51ACD0965653D003"
+ components {
+  WeaponSoundComponent "{5C7A7A05B220BDA4}" {
+   Filenames + {
+    "{B12946540CB7BED0}Sounds/Weapons/Launchers/IR_Module/Weapons_Launchers_IR_Module.acp"
+   }
+  }
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{68AB2C4D953302CC}" {
+     SourceMaterial "M230_LF"
+     AssignedMaterial "{40B7EA05569B9FDC}Assets/Vehicles/Generic/Turrets/data/M230_LF_Black.emat"
+    }
+   }
+  }
+  SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   DoorInfoList {
+    CompartmentDoorReference "{620CD9EE5080AD3D}" {
+     AnimDoorIndex 5
+    }
+   }
+   CompartmentSlots {
+    TurretCompartmentSlot TurretCompartment {
+     CompartmentUniqueName "commander"
+     CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
+      ParentContextList {
+       "CommanderHatch"
+      }
+      "Sort Priority" 2
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D566648F37562}" {
+      ParentContextList {
+       "Commander_idle"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D56867A46DBE769}" {
+       ParentContextList {
+        "Commander_idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D59F48D7BD2}" {
+       ParentContextList {
+        "CommanderHatch"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
+      PivotID "gunner_idle"
+      Offset -0.1725 0.1954 -0.3743
+      Angles -1.0763 0 0
+     }
+     SeatType 5
+     DoorInfoList {
+      0
+     }
+     UIInfo SCR_ActionUIInfo "{50870A10DCCDED83}" {
+      Name "#AR-VehiclePosition_Commander"
+     }
+     CanTurnOut 1
+     TurnOutDoorIdx 0
+     m_DefaultOccupantData SCR_DefaultOccupantData "{620D095D5963F0C2}" {
+      m_sDefaultOccupantPrefab "{F35F145D4A3F75EF}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_CC.et"
+     }
+     m_fFreelookCameraNeckFollowTraverse 1
+     m_fRandomEjectionChance 0
+    }
+   }
+  }
+  TurretComponent "{5C7A7A05B2216696}" {
+   components {
+    SCR_2DSightsComponent "{5C7A7A05B2216693}" {
+     m_sReticleTexture "{1043E8B9D9D51466}UI/Textures/Sights/AbramsGAS/BIOC-white_UI.edds"
+     m_sReticleGlowTexture "{1043E8B9D9D51466}UI/Textures/Sights/AbramsGAS/BIOC-white_UI.edds"
+     m_fMagnification 8
+    }
+   }
+  }
+  WCS_Armament_LoadoutComponent "{68AB2C4FB15F4DF1}" {
+   m_ArmamentGroups {
+    WCS_ArmamentSlotGroup "{68AB2C4FB15F4DEC}" {
+     slotIndex 0
+    }
+    WCS_ArmamentSlotGroup "{68AB2C4FB15F4DEA}" {
+     slotIndex 1
+    }
+    WCS_ArmamentWeaponGroup "{68AB2C4FB15F4DEB}" {
+     prefab "{F44E301781489297}Prefabs/Weapons/AircraftWeapons/MissilePods/Pod_Javelin_CROWS.et"
+     weaponsInfo {
+      WCS_ArmamentWeaponInfo "{68AB2C4FB15F4DE8}" {
+       Position PointInfo "{68AB2C4FB15F4DE9}" {
+        PivotID "v_turret_01"
+        Offset 0.6027 0.5978 -0.1439
+       }
+      }
+     }
+     fireModes {
+      WCS_Armament_WeaponSingleFireMode "{68AB2C4FB15F4D16}" {
+      }
+     }
+     slotIndex 2
+    }
+   }
+   m_sPilotCompartmentUniqueName "commander"
+  }
+  WCS_Armament_VehicleWeaponStationComponent "{68AB2C4FB15F4D14}" {
+   components {
+    WCS_Armament_InfraredMissileWeaponStationModuleComponent "{68AB2C4FB15F4D15}" {
+     m_fLockFov 5
+     m_iEmitterCategory 0
+     m_sCompartmentUniqueName "commander"
+    }
+   }
+  }
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   AttachType InventoryStorageSlot "{0AACE7470E421D82}" {
+    MergePhysics 1
+   }
+   WeaponSlotIndex 0
+  }
+  WeaponSlotComponent "{68AB2C4FB15EEB49}" {
+   Enabled 1
+   WeaponSlotIndex 2
+  }
+  WeaponSlotComponent "{68AB2C4FB15F4D11}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{68AB2C4FB15EEB45}" {
+    signalsSuffix "Turret"
+   }
+   useAimingType MainTurret
+   shouldHandleObstruction 0
+   AttachType InventoryStorageSlot empty {
+    PivotID "v_gun_01"
+    Offset 0.117 -0.0226 -0.0964
+    Angles 0 0 45
+    MergePhysics 1
+    Prefab "{4DD8C4F0F6EAA050}Prefabs/Weapons/MachineGuns/M240/MG_M240_CROWS2.et"
+   }
+   WeaponTemplate "{4DD8C4F0F6EAA050}Prefabs/Weapons/MachineGuns/M240/MG_M240_CROWS2.et"
+   WeaponSlotIndex 1
+  }
+  ActionsManagerComponent "{51ACD09C7181BA0B}" {
+   ActionContexts {
+    UserActionContext "{68AB2C4ED972AD4E}" {
+     ContextName "Rearm30"
+     Position PointInfo "{68AB2C4EC41D4B01}" {
+      PivotID "v_turret_01"
+      Offset -0.4798 0.5528 -0.0602
+     }
+    }
+   }
+   additionalActions {
+    SCR_ResupplyTurretBeltSupportStationAction "{68AB2C4E14A59C1B}" {
+     ParentContextList {
+      "Rearm30"
+     }
+     UIInfo SCR_ActionUIInfo "{64D71DA34B97700C}" {
+      Name "#AR-SupportStation_Resupply_Vehicle_Weapon_ActionName"
+      m_sIconName "rearm"
+     }
+     ActionTitle "Resupply 30mm"
+     Duration -0.5
+     CanAggregate 1
+     PerformPerFrame 1
+     "Sort Priority" 1
+     m_sSoundProject "{310B4870AE881477}Sounds/Weapons/HeavyWeapons/M242/Weapons_HeavyWeapons_M242_Handling.acp"
+     m_ResupplyData SCR_ResupplyItemSupportStationData "{68AB3A1C800F456A}" {
+      m_sItemPrefab "{9B8CDC3CD2E535D2}Prefabs/Weapons/Magazines/Box_30x113_M230LF_250rnd_HEDP.et"
+     }
+     m_iAddBulletsAmount 35
+    }
+   }
+  }
+  VehicleAnimationComponent "{5C7A7A05B2227F84}" {
+   AnimGraph "{7209B480AE95B73B}Assets/Vehicles/Tracked/M1A1/workspaces/M1A1.agr"
+   AnimInstance "{AC6294F122B2FCE0}Assets/Vehicles/Tracked/M1A1/workspaces/M1A1_vehicle.asi"
+   StartNode "VehicleMasterControl"
+   AnimVariables {
+    AnimationVariable "{68AB2C4DEE1837B7}" {
+     VariableName "Yaw_Commander"
+     SignalName "AimTurnCommanderTurret"
+    }
+    AnimationVariable "{68AB2C4D17A48902}" {
+     VariableName "Pitch_Commander"
+     SignalName "AimElevationCommanderTurret"
+    }
+   }
+   AnimInjection AnimationAttachmentInfo "{5C7A7A05B2227F85}" {
+    AnimGraph "{7209B480AE95B73B}Assets/Vehicles/Tracked/M1A1/workspaces/M1A1.agr"
+    AnimInstance "{C58B5F68205B857D}Assets/Vehicles/Tracked/M1A1/workspaces/M1A1_player.asi"
+   }
+   DeactivationDelay 2
+  }
+ }
+}
