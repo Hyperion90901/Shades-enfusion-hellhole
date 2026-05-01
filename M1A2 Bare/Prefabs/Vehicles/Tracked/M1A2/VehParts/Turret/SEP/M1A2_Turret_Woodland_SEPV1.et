@@ -1,0 +1,48 @@
+Turret : "{7DF1E9EF24B53402}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_TuskII_Turret.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{692D52447E370EB9}" {
+     SourceMaterial "m1a1_abrams"
+     AssignedMaterial "{45BE5806D6B7B969}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_Woodland.emat"
+    }
+    MaterialAssignClass "{692D52447E370E8C}" {
+     SourceMaterial "m1a1_abrams_decals"
+     AssignedMaterial "{04A954B401AF0B91}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_decals_GSEP.emat"
+    }
+   }
+  }
+  SlotManagerComponent "{5E182107FF135160}" {
+   Slots {
+    RegisteringComponentSlotInfo Commander {
+     Prefab "{84F0C42B580A4E9A}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Commander_Turret_SEPV1.et"
+    }
+    RegisteringComponentSlotInfo LoaderTurret {
+    }
+    EntitySlotInfo Commander_sight {
+     Prefab "{F245F195B204BBD9}Prefabs/Vehicles/Tracked/M1A2/VehParts/CommanderSight/M1A2_CommanderSight_Woodland.et"
+    }
+    RegisteringComponentSlotInfo BasketExtention {
+     Prefab "{659474E1EB668FEF}Prefabs/Vehicles/Tracked/M1A2/VehParts/M1A2_BasketExtention_Woodland.et"
+    }
+    RegisteringComponentSlotInfo Warlock {
+     Enabled 0
+    }
+    RegisteringComponentSlotInfo LoaderArmor {
+     Enabled 0
+    }
+    RegisteringComponentSlotInfo ARAT {
+     Enabled 0
+     Prefab "{1547181F6A3901C9}Prefabs/Vehicles/Tracked/M1A2/VehParts/ERA/M1A2_Turret_TuskSupports_MERDC.et"
+    }
+    RegisteringComponentSlotInfo Loader_GunShield {
+     Enabled 0
+    }
+   }
+  }
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   WeaponTemplate "{0E818D3228E5F537}Prefabs/Weapons/Cannons/Cannon_M256/Cannon_M256_M1A2_Woodland.et"
+  }
+ }
+}

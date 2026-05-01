@@ -1,0 +1,17 @@
+GenericEntity : "{11BC7CBEF91BEF61}Prefabs/Weapons/Cannons/Cannon_M256/Cannon_M256_M1A2_Woodland.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{68C965A9BA301BBF}" {
+     SourceMaterial "m1a1_abrams"
+     AssignedMaterial "{45BE5806D6B7B969}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_Woodland.emat"
+    }
+    MaterialAssignClass "{68C965A9BA301B91}" {
+     SourceMaterial "m1a1_abrams_decals"
+     AssignedMaterial "{04A954B401AF0B91}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_decals_T1.emat"
+    }
+   }
+  }
+ }
+}

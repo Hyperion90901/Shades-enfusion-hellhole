@@ -1,0 +1,8 @@
+GameProject {
+ ID "M1A2Bare"
+ GUID "691D424DAA57F8CA"
+ TITLE "M1A2 Bare"
+ Dependencies {
+  "5D1880C4AD410C14" "58D0FB3206B6F859"
+ }
+}

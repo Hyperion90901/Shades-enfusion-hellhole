@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2296BFD50CB9450A}Assets/Vehicles/Tracked/M1A1/data/m1a2_decals_TSEP.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

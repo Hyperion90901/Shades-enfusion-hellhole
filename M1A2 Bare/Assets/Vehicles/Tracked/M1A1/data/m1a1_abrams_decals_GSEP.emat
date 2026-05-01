@@ -1,0 +1,5 @@
+MatPBRDecal : "{C8309C19AF8E9580}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_decals.emat" {
+ BCRMap "{6D05F813D46D850F}Assets/Textures/m1a2carcsep.edds"
+ OpacityMap "{2B282B8F653B10D6}Assets/Textures/m1a2carcsep_1.edds"
+ NMOMap "{B0948326047A8AD4}Assets/_SharedData/Metal/ST_Metal_Worn_01_NMO.edds"
+}

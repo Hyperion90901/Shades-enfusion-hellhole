@@ -1,0 +1,5 @@
+MatPBRDecal : "{EAA77589A0F7EF72}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_betty_decals.emat" {
+ Color 0.117 0.103 0.089 1
+ BCRMap "{1DEF4FE478FF7F0B}Assets/Textures/m1a2carcnonsep.edds"
+ OpacityMap "{5914002473124B6C}Assets/Textures/m1a2carcnonsep_1.edds"
+}

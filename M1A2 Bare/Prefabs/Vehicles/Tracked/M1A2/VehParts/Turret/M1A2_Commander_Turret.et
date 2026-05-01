@@ -1,0 +1,12 @@
+Turret : "{392F58341CD41633}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Commander_Turret.et" {
+ ID "51ACD0965653D003"
+ components {
+  SlotManagerComponent "{654B7BE14AAD3E28}" {
+   Slots {
+    EntitySlotInfo Weapon_Mount {
+     Prefab "{528107DD51B5F31D}Prefabs/Vehicles/Tracked/M1A2/VehParts/A2Additions/M1A2_CommandersCupula_WeaponMount.et"
+    }
+   }
+  }
+ }
+}

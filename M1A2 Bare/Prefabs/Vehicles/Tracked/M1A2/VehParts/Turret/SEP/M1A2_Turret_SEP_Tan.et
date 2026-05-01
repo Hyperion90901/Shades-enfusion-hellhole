@@ -1,0 +1,33 @@
+Turret : "{F988138FA41B7FDE}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/SEP/M1A2_Turret_SEP_Tusk_Tan.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{654B7BEA94A967B5}" {
+     SourceMaterial "m1a1_abrams"
+     AssignedMaterial "{B6C3C5299A34D683}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_Tan.emat"
+    }
+    MaterialAssignClass "{654B7BEA94A96750}" {
+     SourceMaterial "m1a1_abrams_decals"
+     AssignedMaterial "{2296BFD50CB9450A}Assets/Vehicles/Tracked/M1A1/data/m1a2_decals_TSEP.emat"
+    }
+   }
+  }
+  SlotManagerComponent "{5E182107FF135160}" {
+   Slots {
+    RegisteringComponentSlotInfo Warlock {
+     Enabled 0
+    }
+    RegisteringComponentSlotInfo LoaderArmor {
+     Enabled 0
+    }
+    RegisteringComponentSlotInfo Loader_GunShield {
+     Enabled 0
+    }
+   }
+  }
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   WeaponTemplate "{6FF0CE9666D7B37D}Prefabs/Weapons/Cannons/Cannon_M256/Cannon_M256_M1A2_SEPV1_Tan.et"
+  }
+ }
+}

@@ -1,0 +1,9 @@
+MatPBRDecal : "{C8309C19AF8E9580}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_decals.emat" {
+ MetalnessScale 1
+ BCRMap "{FA67D0F7FB06F0C6}Assets/Textures/m1a2tannonsep.edds"
+ OpacityMap "{4D026327F63DC2A9}Assets/Textures/m1a2tannonsep_1.edds"
+ NMOMap "{B0948326047A8AD4}Assets/_SharedData/Metal/ST_Metal_Worn_01_NMO.edds"
+ NormalCombinePower 0
+ GBufferRoughness 0
+ GBufferMetalness 0
+}

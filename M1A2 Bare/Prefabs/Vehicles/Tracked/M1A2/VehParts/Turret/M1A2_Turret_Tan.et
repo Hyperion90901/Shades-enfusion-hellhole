@@ -1,0 +1,20 @@
+Turret : "{D80B4DFBE799B4F6}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/M1A2_Turret_Tan.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{60F4A0A4B04D6F2F}" {
+     SourceMaterial "m1a1_abrams"
+     AssignedMaterial "{B6C3C5299A34D683}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_Tan.emat"
+    }
+    MaterialAssignClass "{60F4A0A4B04D6F46}" {
+     SourceMaterial "m1a1_abrams_decals"
+     AssignedMaterial "{C51FB92FD68E191D}Assets/Vehicles/Tracked/M1A1/data/m1a2_decals_T.emat"
+    }
+   }
+  }
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   WeaponTemplate "{6FF0CE9666D7B37E}Prefabs/Weapons/Cannons/Cannon_M256/Cannon_M256_M1A2_Tan.et"
+  }
+ }
+}

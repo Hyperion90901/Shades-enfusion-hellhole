@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{4A2EC4B5EAA232E0}Prefabs/Vehicles/Tracked/M1A2/M1A2_TUSKII_Woodland.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

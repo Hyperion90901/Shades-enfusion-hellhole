@@ -1,0 +1,29 @@
+Tank : "{873727901D36C6E2}Prefabs/Vehicles/Tracked/M1A2/SEP/M1A2_SEP_Tusk_Tan.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68696DF48421296C}" {
+     SourceMaterial "m1a1_abrams"
+     AssignedMaterial "{B6C3C5299A34D683}Assets/Vehicles/Tracked/M1A1/data/m1a1_abrams_Tan.emat"
+    }
+    MaterialAssignClass "{692D52426E5066A6}" {
+     SourceMaterial "m1a1_abrams_decals"
+     AssignedMaterial "{2296BFD50CB9450A}Assets/Vehicles/Tracked/M1A1/data/m1a2_decals_TSEP.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "M1A2 SEPv1 Tan"
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{54515CE3737D770C}Prefabs/Vehicles/Tracked/M1A2/VehParts/Turret/SEP/M1A2_Turret_SEP_Tan.et"
+    }
+   }
+  }
+ }
+}
